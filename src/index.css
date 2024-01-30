@@ -11,6 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.definition{
+  text-shadow: grey 1px 2px;
+  text-decoration: underline;
+}
+
 section {
   margin: 100px 0;
   margin-left: 200px;

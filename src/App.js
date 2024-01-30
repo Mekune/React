@@ -1,10 +1,10 @@
 import "./App.css";
-import Outputting_Lists from "./Outputting_Lists";
+import Props from "./Props";
 
 function App() {
   return (
     <div className="App">
-      <Outputting_Lists />
+      <Props />
     </div>
   );
 }
