@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+section {
+  margin: 100px 0;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: left;
+}
+
+.blog{
+  border: #282c34 solid 2px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 5px;
+}
+
+.blog:hover{
+  background-color: rgb(235, 235, 235);
+  box-shadow: 10px 5px 5px grey;
+  transition: 350ms;
+}
