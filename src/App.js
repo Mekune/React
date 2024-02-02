@@ -1,10 +1,10 @@
 import "./App.css";
-import Function_as_prop from "./Function_as_prop";
+import UseEffectComponent from "./UseEffectComponent";
 
 function App() {
   return (
     <div className="App">
-      <Function_as_prop />
+      <UseEffectComponent />
     </div>
   );
 }
