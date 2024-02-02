@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import BlogDetail from "./BlogDetail.js";
 import Custom_Hook from "./Custom_Hook.js";
 import Create from "./Create.js";
+import NotFound from "./NotFound.js";
 
 export default function Routers() {
   return (
     <section className="test">
-      <h2 className="title">21. Deleting blog (DELETE request)</h2>
+      <h2 className="title">22. 404 NotFound</h2>
       <nav>
         <ul>
           <li>
@@ -27,6 +28,9 @@ export default function Routers() {
         </Route>
         <Route path="/blog/:id">
           <BlogDetail />
+        </Route>
+        <Route path="*">
+          <NotFound />
         </Route>
       </Switch>
     </section>
