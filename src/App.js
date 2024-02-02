@@ -1,11 +1,14 @@
 import "./App.css";
-import Custom_Hook from "./Custom_Hook";
+import Routers from "./Routers";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Custom_Hook />
-    </div>
+    <Router>
+      <div className="App">
+        <Routers />
+      </div>
+    </Router>
   );
 }
 
