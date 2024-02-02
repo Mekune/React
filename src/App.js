@@ -1,10 +1,10 @@
 import "./App.css";
-import Fetch_Error from "./Fetch_Error";
+import Custom_Hook from "./Custom_Hook";
 
 function App() {
   return (
     <div className="App">
-      <Fetch_Error />
+      <Custom_Hook />
     </div>
   );
 }
