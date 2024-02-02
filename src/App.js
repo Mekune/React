@@ -1,10 +1,10 @@
 import "./App.css";
-import Loading from "./Loading";
+import Fetch_Error from "./Fetch_Error";
 
 function App() {
   return (
     <div className="App">
-      <Loading />
+      <Fetch_Error />
     </div>
   );
 }
