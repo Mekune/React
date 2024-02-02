@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 export default function Create() {
   const [title, setTitle] = useState("test");
   const [body, setBody] = useState("test body");
   const [author, setAuthor] = useState("mekune");
   const [isPending, setIsPending] = useState(false);
+  const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,8 +22,11 @@ export default function Create() {
       }).then(() => {
         console.log("new blog added");
         setIsPending(false);
+        // revient a la page précédente
+        // history.go(-1);
+        history.push("/blogs");
       });
-    }, 1000);
+    }, 1500);
   };
 
   return (
