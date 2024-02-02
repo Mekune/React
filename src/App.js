@@ -1,10 +1,9 @@
 import "./App.css";
-import UseEffectComponent from "./UseEffectComponent";
-
+import Json_server from "./Json_server";
 function App() {
   return (
     <div className="App">
-      <UseEffectComponent />
+      <Json_server />
     </div>
   );
 }
