@@ -13,7 +13,6 @@ export default function Props22({ blogs, title, handleDelete }) {
         <div className="blog" key={blog.id}>
           <Link to={`/blog/${blog.id}`}>
             <p>title : {blog.title}</p>
-            <p>content : {blog.body}</p>
             <p> by {blog.author}</p>
           </Link>
           <button onClick={() => handleDelete(blog.id)}>delete</button>

@@ -26,7 +26,7 @@ export default function useFetch(url) {
           setIsPending(false);
           setError(err.message);
         });
-    }, 1500);
+    }, 500);
   }, []);
   return { data, setData, isPending, error };
 }
