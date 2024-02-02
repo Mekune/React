@@ -1,9 +1,10 @@
 import "./App.css";
-import Reusing_Components from "./Reusing_Components";
+import Function_as_prop from "./Function_as_prop";
+
 function App() {
   return (
     <div className="App">
-      <Reusing_Components />
+      <Function_as_prop />
     </div>
   );
 }
