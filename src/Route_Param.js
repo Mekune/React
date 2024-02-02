@@ -7,7 +7,7 @@ import Create from "./Create.js";
 export default function Routers() {
   return (
     <section className="test">
-      <h2 className="title">19. Adding blog (POST request)</h2>
+      <h2 className="title">21. Deleting blog (DELETE request)</h2>
       <nav>
         <ul>
           <li>

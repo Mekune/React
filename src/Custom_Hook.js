@@ -9,10 +9,6 @@ export default function Custom_Hook() {
     isPending,
     error,
   } = useFetch("http://localhost:8000/blogs");
-  const handleDelete = (id) => {
-    const newBlogs = blogs.filter((blog) => blog.id !== id);
-    setBlogs(newBlogs);
-  };
   //.then = promesse, une promesse est : faire une action SI la promesse est respecter (comme si il y a une erreur ou si on a une réponse)
   // par exemple resolve(...) et (res == true) (si la réponse existe et si on a un retour alors on fait ...)
 
@@ -20,13 +16,7 @@ export default function Custom_Hook() {
     <section className="test">
       {isPending && <div>Loading....</div>}
       {error && <div>{error}</div>}
-      {blogs && (
-        <Props22
-          blogs={blogs}
-          title={"All blogs"}
-          handleDelete={handleDelete}
-        />
-      )}
+      {blogs && <Props22 blogs={blogs} title={"All blogs"} />}
     </section>
   );
 }
